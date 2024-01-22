@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Погода</title>
+</head>
+<body>
+   <div class="search">
+       <input class="search__input" id="search__input" type="text" placeholder="Поиск города">
+       <button class="search__btn" id="search__btn"><img src="img/search-alt-1-svgrepo-com.svg" alt="search"></button>
+   </div>
+   <h3 class="city-title" id="city">Москва</h3>
+   <p class="time" id="time-is-now">Текущее время: 8.00</p>
+   <div class="item">
+       <img src="img/weather/snow.png" id="img-icon" alt="">
+       <div class="temperature" id="temperature">-22</div>
+   </div>
+   <div class="weather__text" id="weather-main">Снег</div>
+   <div class="weather__text">Ощущается как <span id="feels_like"></span></div>
+   
+   <div class="weather__content">
+       <div class="weather__inner">
+           <img src="img/svg/pressure.svg" alt="">
+           <span id="pressure">755 мм рт. ст.</span>
+       </div>
+       <div class="weather__inner">
+           <img src="img/svg/humidity.svg" alt="">
+           <span id="humidity">86%</span>
+       </div>
+       <div class="weather__inner">
+           <img src="img/svg//windstorm.svg" alt="">
+           <span id="wind-speed">7 м/с Ю-ЮЗ</span>
+       </div>
+   </div>
+   
+   <script src="app.js"></script>
+</body>
+</html>

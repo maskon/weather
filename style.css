@@ -1,0 +1,58 @@
+body {
+    
+}
+
+.search {
+    position: relative;
+    display: flex;
+}
+
+.search__input {
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.search__btn {
+    position: absolute;
+    top: 5px;
+    left: 180px;
+    background-color: #fff;
+    border: none;
+    
+}
+
+.search__btn img {
+    width: 15px;
+    height: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    font-size: 45px;
+    margin-left: 25px;
+}
+
+.weather__text {
+    margin-bottom: 3px;
+}
+
+.weather__content {
+    margin-top: 15px;
+}
+
+.weather__content img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.weather__inner {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
