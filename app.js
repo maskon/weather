@@ -21,7 +21,7 @@ async function getWeather() {
     try {
         searchInput.value = ''
         city.innerHTML = firstCharUp(value)
-        city.style.color = '#333'
+        city.style.color = '#fff'
         timeIsNow.innerHTML = 'Последнее обновление: ' + time.toLocaleTimeString()
         const url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${value},Russia&APPID=aa35c943cb59788c0b051d77d4fe31d5`);
         const data = await url.json()

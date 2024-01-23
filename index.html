@@ -7,33 +7,36 @@
     <title>Погода</title>
 </head>
 <body>
-   <div class="search">
-       <input class="search__input" id="search__input" type="text" placeholder="Поиск города">
-       <button class="search__btn" id="search__btn"><img src="img/search-alt-1-svgrepo-com.svg" alt="search"></button>
-   </div>
-   <h3 class="city-title" id="city">Москва</h3>
-   <p class="time" id="time-is-now">Последнее обновление</p>
-   <div class="item">
-       <img src="http://openweathermap.org/img/w/03n.png" id="img-icon" alt="">
-       <div class="temperature" id="temperature">-22℃</div>
-   </div>
-   <div class="weather__text" id="weather-main">Снег</div>
-   <div class="weather__text">Ощущается как <span id="feels_like">-30℃</span></div>
+   <main class="wrapper">
+       <div class="search">
+           <input class="search__input" id="search__input" type="text" placeholder="Поиск города">
+           <button class="search__btn" id="search__btn"><img src="img/search-alt-1-svgrepo-com.svg" alt="search"></button>
+       </div>
+       <h3 class="city-title" id="city">Москва</h3>
+       <p class="time" id="time-is-now">Последнее обновление</p>
+       <div class="item">
+           <img src="http://openweathermap.org/img/w/03n.png" id="img-icon" alt="">
+           <div class="temperature" id="temperature">-22℃</div>
+       </div>
+       <div class="weather__text" id="weather-main">Снег</div>
+       <div class="weather__text">Ощущается <span id="feels_like">-30℃</span></div>
+
+       <div class="weather__content">
+           <div class="weather__inner">
+               <img src="img/svg/iconizer-pressure.svg" alt="">
+               <span id="pressure">755 мм рт. ст.</span>
+           </div>
+           <div class="weather__inner">
+               <img src="img/svg/iconizer-humidity.svg" alt="">
+               <span id="humidity">86%</span>
+           </div>
+           <div class="weather__inner">
+               <img src="img/svg/iconizer-windstorm.svg" alt="">
+               <span id="wind-speed">7 м/с</span>
+           </div>
+       </div>
+   </main>
    
-   <div class="weather__content">
-       <div class="weather__inner">
-           <img src="img/svg/pressure.svg" alt="">
-           <span id="pressure">755 мм рт. ст.</span>
-       </div>
-       <div class="weather__inner">
-           <img src="img/svg/humidity.svg" alt="">
-           <span id="humidity">86%</span>
-       </div>
-       <div class="weather__inner">
-           <img src="img/svg//windstorm.svg" alt="">
-           <span id="wind-speed">7 м/с</span>
-       </div>
-   </div>
    
    <script src="app.js"></script>
 </body>
