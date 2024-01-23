@@ -4,6 +4,7 @@ body {
     background-image: url(img/bg.jpg);
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
+    margin: 0;
 }
 
 .wrapper {
@@ -20,26 +21,26 @@ body {
 
 .search__input {
     width: 250px;
-    padding: 5px;
+    padding: 10px 5px;
     padding-right: 30px;
 }
 
 .search__btn {
     position: absolute;
-    top: 5px;
-    left: 260px;
+    top: 10px;
+    left: 255px;
     background-color: #fff;
     border: none;
     
 }
 
 .search__btn img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .city-title {
-    font-size: 30px;
+    font-size: 36px;
     margin: 15px 0;
 }
 
@@ -66,7 +67,7 @@ body {
 
 .weather__content {
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .weather__content img {
@@ -80,4 +81,10 @@ body {
     display: flex;
     align-items: flex-end;
     margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        height: 100vh;
+    }
 }
