@@ -10,7 +10,6 @@ const pressure = document.getElementById('pressure')
 const weatherMain = document.getElementById('weather-main')
 const windSpeed = document.getElementById('wind-speed')
 const pressureText = document.querySelectorAll('.pressure-text')
-const time = new Date()
 
 let value
 
@@ -20,6 +19,9 @@ searchBtn.addEventListener('click', () => { getWeather() })
 
 async function getWeather() {
     try {
+        
+        const time = new Date()
+        
         searchInput.value = ''
         city.innerHTML = firstCharUp(value)
         city.style.color = '#fff'
